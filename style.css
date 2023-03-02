@@ -41,6 +41,7 @@ footer {
 }
 
 section .title {
+	text-transform: uppercase;
 	position: relative;
 	text-align: center;
 	font-size: 40px;
@@ -62,6 +63,7 @@ section .title::before {
 }
 
 section .title::after {
+	text-transform: lowercase;
 	position: absolute;
 	bottom: -8px;
 	left: 50%;
@@ -358,6 +360,53 @@ section .title::after {
 
 /* End About Section Style */
 
+/* Servises Section Style */
+.services {
+
+}
+.services .title::before {
+
+}
+.services .title::after{
+	
+	content: "what i provide";
+}
+.services .serv-content .card {
+	width: calc(50% - 20px);
+	background: #222;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 20px 25px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+} 
+.services .serv-content .card .box {
+	transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+	background: crimson;
+}
+.services .serv-content .card:hover .box {
+	transform: scale(1.05);
+}
+.services .serv-content .card i {
+	font-size: 50px;
+	color: crimson;
+	transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+	color: #fff;
+}
+.services .serv-content .card .text {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
+/* End Servises Section Style */
+
+
 /* responsive media quary */
 @media (max-width: 1300px) {
 	.home .max-width {
@@ -446,6 +495,10 @@ section .title::after {
 	.about .about-content .right {
 		flex: 100%;
 	}
+	.services .serv-content .card {
+		width: calc(50% - 10px);
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 690px) {
@@ -463,6 +516,9 @@ section .title::after {
 
 	.hero .hero-content a {
 		font-size: 20px;
+	}
+	.services .serv-content .card {
+		width: 100%;
 	}
 }
 
