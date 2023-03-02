@@ -360,15 +360,22 @@ section .title::after {
 
 /* End About Section Style */
 
+/* Skills Section Style */
+.skills {
+	background: #111;
+	color: #fff;
+}
+.skills .title::before {
+background: #fff;
+}
+.skills .title::after{
+	background: #111;
+	content: "what i know";
+}
+/* End Skills Section Style */
+
 /* Servises Section Style */
-.services {
-
-}
-.services .title::before {
-
-}
 .services .title::after{
-	
 	content: "what i provide";
 }
 .services .serv-content .card {
@@ -406,6 +413,19 @@ section .title::after {
 }
 /* End Servises Section Style */
 
+/* Certificate Section Style */
+.cert {
+	background: #111;
+	color: #fff;
+}
+.cert .title::before {
+background: #fff;
+}
+.cert .title::after{
+	background: #111;
+	content: "what i got";
+}
+/* End Certificate Section Style */
 
 /* responsive media quary */
 @media (max-width: 1300px) {
@@ -534,3 +554,18 @@ section .title::after {
 }
 
 /* End responsive media quary */
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
